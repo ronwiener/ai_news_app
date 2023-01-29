@@ -7,7 +7,8 @@ import Header from "./components/Header/Header";
 import { Typography } from "@mui/material";
 import wordsToNumbers from "words-to-numbers";
 
-const alanKey = ALAN_KEY;
+const alanKey =
+  "fc873534e3fa05ae953170496d91f1f82e956eca572e1d8b807a3e2338fdd0dc/stage";
 
 const App = () => {
   const [newsArticles, setNewsArticles] = useState([]);
@@ -57,6 +58,7 @@ const App = () => {
       },
     });
   }, [alanBtnRef]);
+  console.log(newsArticles);
   return (
     <div>
       <div
